@@ -22,8 +22,8 @@ import java.util.ArrayList;
 public class Course_dao extends GenericDao{
     
     //list of all queries
-    private static final String FINDALLCOURSES = "SELECT * FROM courses";
-    private static final String FINDBYID = "SELECT * FROM courses WHERE id = ?";
+    private static final String FINDALLCOURSES = "select * from courses";
+    private static final String FINDBYID = "select * from courses WHERE id = ?";
     private static final String INSERT = "insert into courses "
             + "(title, stream, type, start_date, end_date) "
             + "values (?, ?, ?, ?, ?)";

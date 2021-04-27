@@ -24,7 +24,7 @@ public class Student_dao extends GenericDao{
     
         
     //list of all queries
-    private static final String FINDALLSTUDENTS = "SELECT * FROM students";
+    private static final String FINDALLSTUDENTS = "select * from students";
     private static final String STUDENTSPERCOURSE = "select courses.id, courses.title as 'Course title', "
         + "courses.type as 'Course type', students.*"
         + "from courses inner join students_courses "

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class Trainer_dao extends GenericDao{
     
     //list of all queries
-    private static final String FINDALLTRAINERS = "SELECT * FROM trainers";
+    private static final String FINDALLTRAINERS = "select * from trainers";
     private static final String TRAINERSPERCOURSE = "select courses.title as 'Course title',"
             + " courses.type as 'Course type', trainers.*" +
             "from courses "+

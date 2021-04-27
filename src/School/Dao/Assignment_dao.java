@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class Assignment_dao extends GenericDao {
 
     //list of all queries
-    private static final String FINDALLASSIGNMENTS = "SELECT * FROM assignments";
+    private static final String FINDALLASSIGNMENTS = "select * from assignments";
     private static final String ASSIGNMENTSPERCOURSE = "select courses.title as 'Course title', "
             + "courses.type as 'Course type', assignments.*\n"
             + "from courses inner join courses_assignments on courses.id = courses_assignments.crs_id\n"
