@@ -11,11 +11,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 
@@ -27,7 +25,7 @@ import java.util.Date;
 public class GenericDao {
     
     //queries
-    private final String url = "jdbc:mysql://localhost:3306/school";
+    private final String url = "jdbc:mysql://localhost:3306/spanopoulouVicky";
     private final String user = "root";
     private final String password = "root";
     
@@ -64,12 +62,6 @@ public class GenericDao {
     }
     
     
-//    protected LocalDateTime getLocalDateTime(Timestamp ts) {
-//        if (ts != null) {
-//            return ts.toLocalDateTime();
-//        }
-//        return null;
-//    }
     
     //takes a string as an input and turns it into local date  
     public static LocalDate stringToLocalDate(String date) throws ParseException {

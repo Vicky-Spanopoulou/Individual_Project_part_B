@@ -181,7 +181,8 @@ public class Student_dao extends GenericDao{
             }
         } 
         catch (SQLException ex) {
-            System.out.println("Something went wrong! Student's not added to course");
+            System.out.println("Something went wrong! This student already"
+                    + "exists in this course");
         } 
         finally {
             closeConnections(pstm, conn);
